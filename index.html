@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <label for="sellingprice">Selling Price:</label>
+    <input type="number" name="sellingprice" id="sellingprice">
+    <label for="productname">Product Name:</label>
+    <input type="text" name="productname" id="productname">
+    <label for="category"> Choose a Category:</label>
+    <select name="category" id="category">
+        <option value="Electronics">Electronics</option>
+        <option value="Food">Food</option>
+        <option value="Skincare">Skincare</option>
+    </select>
+    <button id="button">Add Products</button>
+ 
+    <h1>Products</h1>
+    <div id="electronics">
+        <h2>Electronic Items</h2>
+        <ul id =electronicItems>
+        </ul>
+    </div>
+    <div id="food">
+        <h2>Food Items</h2>
+        <ul id =foodItems>
+        </ul>
+    </div>
+    <div id="skincare">
+        <h2>Skincare Items</h2>
+        <ul id =skincareItems>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
